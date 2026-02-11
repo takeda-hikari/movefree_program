@@ -1,0 +1,10 @@
+演習3
+
+選んだサイトURL
+https://www.mq-onlineshop.com/
+
+推測するCMSの種類
+shopify
+
+推測の根拠
+カートや決済画面がshopify特有の洗練されたUIであり、ブランドの世界観と高度なEC機能が両立されているため
