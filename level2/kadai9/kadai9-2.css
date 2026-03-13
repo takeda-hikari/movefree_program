@@ -1,0 +1,55 @@
+/* kadai9-2.css の内容 */
+body {
+    font-family: "ＭＳ 明朝", MS Mincho, serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #ff6600; /* オレンジ */
+    text-align: center;
+    border-bottom: 2px solid #ff6600; /* オレンジ */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block; /* ラベルと入力欄を同じ行にするため */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* paddingとborderをwidthに含める */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: deepskyblue; /* 水色 */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* ホバー時のアニメーション */
+}
+input[type="submit"]:hover {
+    background-color: #0000ff; /* ホバーで青に */
+}
