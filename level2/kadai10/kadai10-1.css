@@ -1,0 +1,21 @@
+/* kadai10-1.css */
+div {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+/* box1にはpaddingを追加 */
+.box1 {
+    padding: 20px;
+}
+/* box2にはmarginを追加 */
+.box2 {
+    margin: 30px;
+}
+
+
+/* box3にはborderを追加 */
+.box3 {
+    border: 10px solid navy;
+}
