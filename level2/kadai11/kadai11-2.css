@@ -1,0 +1,24 @@
+/* kadai11-2.css に追記 */
+.main-nav {
+    display: flex; /* Flexboxを有効に */
+    width: 100%; /* 親要素の幅を100%にする */
+    background-color: #333;
+    margin-top: 30px;
+}
+
+.nav-item {
+    flex: 1; /* ここで均等な幅にする */
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    text-decoration: none; /* 下線を消す */
+    border-right: 1px solid #555;
+}
+
+.nav-item:last-child {
+    border-right: none; /* 最後のアイテムの右ボーダーは不要 */
+}
+
+.nav-item:hover {
+    background-color: #555;
+}

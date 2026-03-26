@@ -1,0 +1,35 @@
+/* kadai11-1.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.card-container {
+    display: flex; /* ここでFlexboxを有効にする */
+    justify-content: space-around; /* アイテム間にスペースを均等に配置 */
+    align-items: stretch; /* アイテムの高さを揃える */
+    border: 2px dashed #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 30%; /* 初期幅を設定 */
+    background-color: #f0f8ff; /* 薄い青 */
+    border: 1px solid #add8e6; /* 薄い水色の枠線 */
+    border-radius: 8px; /* 角を丸くする */
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* 影 */
+}
+
+.card h2 {
+    color: #336699;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+}

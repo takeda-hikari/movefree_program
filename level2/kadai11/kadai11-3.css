@@ -1,0 +1,35 @@
+/* kadai11-3.css に追記 */
+.grow-shrink-container {
+    display: flex;
+    width: 600px; /* 親要素の幅を指定 */
+    height: 100px;
+    background-color: #e0f2f7; /* 薄い水色 */
+    border: 1px solid #81d4fa;
+    margin-top: 30px;
+}
+
+.gs-item {
+    background-color: #81d4fa; /* 明るい水色 */
+    border: 1px solid #4fc3f7;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    line-height: 80px; /* 高さに合わせてテキストを中央に */
+    flex-basis: 150px; /* 全てのアイテムの初期サイズ */
+}
+
+.gs-item-grow {
+    flex-grow: 2; /* 他のアイテムの2倍伸びる */
+    background-color: #ffcc80; /* オレンジ */
+}
+
+.gs-item-normal {
+    flex-grow: 1; /* 均等に伸びる */
+    background-color: #a7d9b5; /* 緑 */
+}
+
+.gs-item-shrink {
+    flex-shrink: 0; /* 縮まない */
+    background-color: #f7a6a6; /* 赤 */
+}
