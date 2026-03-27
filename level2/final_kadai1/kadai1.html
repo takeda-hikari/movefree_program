@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介サイト</title>
+    <link rel="stylesheet" href="kadai1.css">
+</head>
+<body>
+    <h1>武田ひかり</h1>
+
+    <h2>自己紹介</h2>
+        <p>初めまして。大学2年生の武田ひかりです。現在、大学でITやデータサイエンスについて学んでいます。</p>
+        <img src="images/my_photo.jpg" alt="私の笑顔のプロフィール写真" width="150" height="150" class="profile-pic">
+        <p><a href="https://www.instagram.com/?hl=ja" target="_blank" rel="noopener noreferrer">SNS（Instagram）へのリンク</a></p>
+
+    <h2>スキル</h2>
+    <ul>
+        <li>HTMLの基礎知識</li>
+        <li>CSSによるデザイン調整</li>
+        <li>JavaScriptによる動的な表現</li>
+    </ul>
+    
+    <h2>経歴</h2>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">年</th>
+                <th scope="col">月</th>
+                <th scope="col">学歴・職業</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <td>2024</td> <td>3</td> <td>高校卒業</td> </tr>
+            <tr> <td>2024</td> <td>4</td> <td>同志社大学　入学</td> </tr>
+            <tr> <td>2025</td> <td>12</td> <td>合同会社MoveFree、Webコースにて学習中</td> </tr>
+        </tbody>
+    </table>
+
+    <h2>お問い合わせフォーム</h2>
+    <form action="submit.php" method="post">
+        <div>
+            <label for="name">お名前 </label><br>
+            <input type="text" id="name" name="user_name" required>
+        </div>
+        <div>
+            <label for="email">メールアドレス </label><br>
+            <input type="email" id="email" name="user_email" required>
+        </div>
+        <div>
+            <label for="message">お問い合わせ内容 </label><br>
+            <textarea id="message" name="user_message" rows="5" required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="送信">
+        </div>
+    </form>
+
+        
+</body>
+</html>
