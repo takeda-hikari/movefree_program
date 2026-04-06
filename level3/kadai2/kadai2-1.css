@@ -1,0 +1,26 @@
+/* kadai2-1.css */
+body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+/* アニメーションの設計図を定義 */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3; /* 薄いグレーの円 */
+    border-top: 5px solid #3498db; /* 上部だけ青い */
+    border-radius: 50%; /* 正円にする */
+    
+    /* アニメーションを適用 */
+    animation: spin 1s linear infinite;
+}

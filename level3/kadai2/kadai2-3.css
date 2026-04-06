@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+/* アニメーションの設計図を定義 */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-3deg); }
+    50% { transform: translateX(5px) rotate(3deg); }
+    75% { transform: translateX(-5px) rotate(-3deg); }
+    100% { transform: translateX(0); }
+}
+
+.shake-button {
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ホバー時にアニメーションを適用 */
+.shake-button:hover {
+    animation: shake 0.5s ease-in-out;
+}
