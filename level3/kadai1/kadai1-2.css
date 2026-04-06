@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    text-align: center;
+}
+
+.styled-button {
+    background-color: #3498db; /* 青色 */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none; /* フォーカス時の枠線を消す */
+
+    /* ここにトランジションを設定 */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #e74c3c; /* ホバーで赤色に */
+    transform: scale(1.1); /* サイズを1.1倍に拡大 */
+}
+
+/* kadai1-2.css に追記 */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71; /* 緑色 */
+    margin: 50px auto; /* 上下50px、左右中央 */
+    border-radius: 10px;
+
+    /* ここにトランジションを設定 */
+    transition: all 0.4s ease-out;
+}
+
+.box:hover {
+    width: 150px;
+    height: 150px;
+    background-color: #27ae60; /* ホバーで少し濃い緑に */
+    border-radius: 50%; /* 丸い形に変化 */
+    transform: rotate(45deg); /* 45度回転 */
+}

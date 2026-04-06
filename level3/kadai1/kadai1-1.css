@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    text-align: center;
+}
+
+.styled-button {
+    background-color: #3498db; /* 青色 */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none; /* フォーカス時の枠線を消す */
+
+    /* ここにトランジションを設定 */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #e74c3c; /* ホバーで赤色に */
+    transform: scale(1.1); /* サイズを1.1倍に拡大 */
+}
