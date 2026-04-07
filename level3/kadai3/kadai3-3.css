@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    text-align: center;
+}
+
+.image-wrapper {
+    display: inline-block; /* img要素の親としてtransform-originを設定するため */
+    overflow: hidden; /* 拡大した画像がはみ出さないように */
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+.transform-image {
+    display: block; /* img要素はinline-blockで、margin: autoが効かないため */
+    transition: transform 0.4s ease-out; /* transformの変化にトランジション */
+    transform-origin: center center; /* デフォルトと同じだが明示的に */
+}
+
+.transform-image:hover {
+    transform: scale(1.1) rotate(5deg); /* 1.1倍に拡大し、5度回転 */
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Flexboxのアイテム間の隙間 */
+    perspective: 800px; /* 親要素に遠近感を設定 (3D変形に必須) */
+    margin-top: 50px;
+}
+
+.card {
+    width: 150px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex; /* テキストを中央寄せにするため */
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+    transition: transform 0.5s ease-in-out;
+}
+.card-1:hover {
+    transform: rotateY(30deg); /* Y軸を中心に30度回転 */
+    background-color: #2980b9;
+}
+
+.card-2:hover {
+    transform: rotateX(20deg); /* X軸を中心に20度回転 */
+    background-color: #2980b9;
+}
+
+.card-3:hover {
+    transform: rotateZ(10deg); /* Z軸を中心に10度回転 */
+    background-color: #2980b9;
+}
+.parent-box {
+    position: relative; /* 子要素のposition: absoluteの基準にする */
+    width: 300px;
+    height: 200px;
+    background-color: #f7e7d4;
+    border: 2px solid #e6b9a6;
+    margin: 50px auto; /* 親要素を中央寄せ */
+}
+
+.child-box {
+    width: 100px;
+    height: 50px;
+    background-color: #a7d9b5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+    position: absolute; /* 親要素基準で位置を決定 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 自身のサイズ基準で中央に補正 */
+
+    /* 上下にふわふわ移動するアニメーション */
+    animation: floaty 2s ease-in-out infinite alternate;
+}
+
+@keyframes floaty {
+    0% {
+        transform: translate(-50%, -50%); /* 元の位置（中央） */
+    }
+    100% {
+        transform: translate(-50%, -60%); /* 少し上に移動 */
+    }
+}

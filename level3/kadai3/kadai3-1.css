@@ -1,0 +1,22 @@
+/* kadai3-1.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    text-align: center;
+}
+
+.image-wrapper {
+    display: inline-block; /* img要素の親としてtransform-originを設定するため */
+    overflow: hidden; /* 拡大した画像がはみ出さないように */
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+.transform-image {
+    display: block; /* img要素はinline-blockで、margin: autoが効かないため */
+    transition: transform 0.4s ease-out; /* transformの変化にトランジション */
+    transform-origin: center center; /* デフォルトと同じだが明示的に */
+}
+
+.transform-image:hover {
+    transform: scale(1.1) rotate(5deg); /* 1.1倍に拡大し、5度回転 */
+}
