@@ -7,7 +7,7 @@ function my_portfolio_setup() {
 }
 add_action( 'after_setup_theme', 'my_portfolio_setup' );
 
-function my_portfolio_enqueue_styles() {
+function my_portfolio_enqueue_assets() {
     wp_enqueue_style(
         'google-fonts',
         'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap',
@@ -25,12 +25,12 @@ function my_portfolio_enqueue_styles() {
     wp_enqueue_script(
         'portfolio-script',
         get_template_directory_uri() . '/main.js',
-        array('jquery'),
+        array('jquery'), 
         '1.0.0',
-        true
+        true 
     );
 }
-add_action('wp_enqueue_scripts', 'my_portfolio_enqueue_styles');
+add_action('wp_enqueue_scripts', 'my_portfolio_enqueue_assets');
 
 function register_custom_post_works() {
     $labels = [
@@ -53,16 +53,3 @@ function register_custom_post_works() {
     register_post_type('works', $args);
 }
 add_action('init', 'register_custom_post_works');
-
-function my_portfolio_enqueue_scripts() {
-    wp_enqueue_style( 'portfolio-style', get_stylesheet_uri() );
-
-    wp_enqueue_script( 
-        'portfolio-script', 
-        get_template_directory_uri() . '/js/main.js', 
-        array('jquery'), 
-        '1.0.0', 
-        true 
-    );
-}
-add_action( 'wp_enqueue_scripts', 'my_portfolio_enqueue_scripts' );

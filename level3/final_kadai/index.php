@@ -120,6 +120,4 @@
         </div>
     </div>
 
-    <button id="js-scroll-top" class="scroll-top-btn" aria-label="ページトップへ戻る">↑</button>
-
 <?php get_footer(); ?>
